@@ -14,6 +14,7 @@ set :branch, "master"
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
+ssh_options[:keys] = ["/Users/sergioandresmonsalvecastaneda/rails_projects/samaws.pem"]
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
