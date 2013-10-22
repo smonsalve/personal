@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-server "72.14.183.209", :web, :app, :db, primary: true
+server "54.225.225.159", :web, :app, :db, primary: true
 
 set :application, "personal"
 set :user, "deployer"
