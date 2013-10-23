@@ -1,6 +1,11 @@
 require "bundler/capistrano"
 require "rvm/capistrano"
 
+set :default_environment, {
+'PATH' => "$HOME/.rvm $HOME/.rvm/bin/rvm-shell"
+}
+
+
 server "54.225.225.159", :web, :app, :db, primary: true
 
 set :application, "personal"
